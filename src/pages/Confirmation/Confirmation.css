@@ -1,0 +1,32 @@
+.confirmation-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.confirmation h1 {
+  font-size: var(--fs-650);
+}
+
+.confirmation h2 {
+  font-size: var(--fs-500);
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.confirmation > p,
+a {
+  font-size: var(--fs-400);
+}
+
+.confirmation .confirmation-headers {
+  font-weight: 600;
+  color: var(--color-red);
+}

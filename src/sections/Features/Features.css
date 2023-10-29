@@ -1,0 +1,166 @@
+.features h2 {
+  font-size: var(--fs-700);
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "f1 fi f4"
+    "f2 fi f5"
+    "f3 fi f6";
+}
+
+.feature-1 {
+  grid-area: f1;
+}
+.feature-2 {
+  grid-area: f2;
+}
+.feature-3 {
+  grid-area: f3;
+}
+.feature-4 {
+  grid-area: f4;
+}
+.feature-5 {
+  grid-area: f5;
+}
+.feature-6 {
+  grid-area: f6;
+}
+.feature-img {
+  grid-area: fi;
+  margin: auto;
+  display: flex;
+  place-content: center;
+}
+
+.feature-img img:last-child {
+  display: none;
+}
+
+.feature-img img {
+  max-height: 75vh;
+  max-width: 90%;
+}
+
+.feature-1,
+.feature-2,
+.feature-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: end;
+  gap: 0.2rem;
+  margin-block: 1rem;
+}
+
+.feature-4,
+.feature-5,
+.feature-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  gap: 0.2rem;
+  margin-block: 1rem;
+}
+
+.feature-icon {
+  font-size: var(--fs-700);
+  cursor: pointer;
+}
+
+.feature-title {
+  font-size: var(--fs-400);
+  font-weight: 600;
+}
+
+.feature-text {
+  font-size: var(--fs-400);
+  font-weight: 300;
+}
+
+/*======================= Responsive ============================ */
+
+@media screen and (min-width: 1900px) {
+}
+
+@media screen and (max-width: 1250px) {
+}
+
+@media screen and (max-width: 950px) {
+}
+
+@media screen and (max-width: 650px) {
+  .feature-img img {
+    max-height: 40vh;
+    max-width: 80%;
+  }
+  .features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "f1 f4"
+      "f2 f5"
+      "f3 f6"
+      "fi fi";
+  }
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    margin-block: 0.5rem;
+    margin-inline-end: 1rem;
+  }
+
+  .feature-4,
+  .feature-5,
+  .feature-6 {
+    margin-block: 0.5rem;
+    margin-inline-start: 1rem;
+  }
+
+  .feature-img {
+    margin-top: 2rem;
+  }
+  .feature-img img:first-child {
+    display: none;
+  }
+  .feature-img img:last-child {
+    display: initial;
+  }
+  .features h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .features-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "f4"
+      "f2"
+      "f1"
+      "f5"
+      "f3"
+      "f6"
+      "fi";
+  }
+  .features-container > * {
+    margin: 0.5rem 0;
+    align-items: center;
+    text-align: center;
+    gap: 0.15rem;
+  }
+  .feature-img {
+    margin-top: 1.5rem;
+  }
+  .feature-img img {
+    max-height: 35vh;
+    max-width: 75%;
+  }
+}
