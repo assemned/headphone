@@ -115,7 +115,7 @@ const Checkout = () => {
       setErrors(validationErrors);
     }
     axios
-      .post("https://headphone-api.onrender.com/payment", checkoutData)
+      .post("https://headphone-api-syfz.onrender.com/payment", checkoutData)
       .then((response) => {
         const paymentId = response.data._id;
         setMessage("Subscription successful!");

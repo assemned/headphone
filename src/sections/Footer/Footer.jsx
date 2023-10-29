@@ -27,7 +27,7 @@ const Footer = () => {
     }
 
     axios
-      .post("https://headphone-api.onrender.com/newsletter", { email })
+      .post("https://headphone-api-syfz.onrender.com/newsletter", { email })
       .then((response) => {
         setMessage("Subscription successful!");
       })
