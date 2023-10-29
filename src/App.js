@@ -6,9 +6,9 @@ import "./App.css";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" component={Main} />
-      <Route path="/checkout" component={Checkout} />
-      <Route path="/confirmation/:id" component={Confirmation} />
+      <Route path="/" Component={Main} />
+      <Route path="/checkout" Component={Checkout} />
+      <Route path="/confirmation/:id" Component={Confirmation} />
     </Routes>
   );
 };
