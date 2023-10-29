@@ -11,7 +11,7 @@ const Confirmation = () => {
 
   useEffect(() => {
     axios
-      .get(`https://headphone-api-syfz.onrender.com//payment/${id}`)
+      .get(`https://headphone-api-syfz.onrender.com/payment/${id}`)
       .then((response) => {
         setPaymentData(response.data);
       });
