@@ -10,9 +10,11 @@ const Confirmation = () => {
   const [paymentData, setPaymentData] = useState({});
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/payment/${id}`).then((response) => {
-      setPaymentData(response.data);
-    });
+    axios
+      .get(`https://headphone-api-syfz.onrender.com//payment/${id}`)
+      .then((response) => {
+        setPaymentData(response.data);
+      });
   }, [id]);
 
   return (
